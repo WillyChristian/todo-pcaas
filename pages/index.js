@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Image } from "next";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,7 +9,12 @@ export default function Home() {
         <h1>App PCAA - Todo list para não se perder</h1>
       </div>
       <div className="h-16 bg-white text-blue-200 text-xl flex items-center justify-center">
-        <Image className="h-10" src="/logo-colorido.png" alt="logo-stefanini" />
+        <Image
+          width="100"
+          height="30"
+          src="/logo-colorido.png"
+          alt="logo-stefanini"
+        />
       </div>
       <div className="justify-center h-20 select-none flex items-center space-x-4">
         <Link href="/todo">
