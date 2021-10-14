@@ -14,9 +14,11 @@ And open [http://localhost:3000](http://localhost:3000) on your browser
 
 ## Stack
 
-https://img.shields.io/badge/Framework-NEXT.Js-green
-https://img.shields.io/badge/Framework-React.Js-blue
-https://img.shields.io/badge/Host-Vercel-orange
+<p>
+https://img.shields.io/badge/Framework-NEXT.Js-green <br />
+https://img.shields.io/badge/Framework-React.Js-blue <br />
+https://img.shields.io/badge/Host-Vercel-orange <br />
+</p>
 I decide to use Next.Js so I cam use vercel to store it without complications and use react wit and API server integrated. However, I don't know if i will really need it.
 
 ## Deploy on Vercel
