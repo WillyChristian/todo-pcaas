@@ -1,5 +1,4 @@
 import React from "react";
-import { Parag } from "./step_1_style";
 
 export default function StepOne() {
   return (
