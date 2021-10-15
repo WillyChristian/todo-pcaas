@@ -2,11 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import Todo from "./todo";
+import Sobre from "./sobre";
+import Uteis from "./uteis";
+
 export default function Home() {
+  const [page, setPage] = React.useState(<Todo />);
   return (
     <div className="bg-gray-100 min-h-screen">
       <div className="h-20 bg-blue-600 text-blue-200 text-xl flex items-center justify-center">
-        <h1>App PCAA - Todo list para não se perder</h1>
+        <h1>Roadmap PCAAS</h1>
       </div>
       <div className="h-16 bg-white text-blue-200 text-xl flex items-center justify-center">
         <Image
@@ -16,17 +21,28 @@ export default function Home() {
           alt="logo-stefanini"
         />
       </div>
-      <div className="justify-center h-20 select-none flex items-center space-x-4">
-        <Link href="/todo">
-          <a className="p-2 text-white rounded-lg bg-indigo-700">To Do</a>
-        </Link>
-        <Link href="/uteis">
-          <a className="p-2 text-white rounded-lg bg-indigo-700">Utilitários</a>
-        </Link>
-        <Link href="/sobre">
-          <a className="p-2 text-white rounded-lg bg-indigo-700">Créditos</a>
-        </Link>
-      </div>
+      <section className="nav justify-center h-20 select-none flex items-center space-x-4">
+        <button
+          onClick={() => setPage(<Todo />)}
+          className="p-2 text-white rounded-lg bg-indigo-700"
+          on
+        >
+          To Do
+        </button>
+        <button
+          onClick={() => setPage(<Uteis />)}
+          className="p-2 text-white rounded-lg bg-indigo-700"
+        >
+          Utilitários
+        </button>
+        <button
+          onClick={() => setPage(<Sobre />)}
+          className="p-2 text-white rounded-lg bg-indigo-700"
+        >
+          Créditos
+        </button>
+      </section>
+      <section>{page}</section>
     </div>
   );
 }
