@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import Todo from "./todo";
@@ -24,20 +23,20 @@ export default function Home() {
       <section className="nav justify-center h-20 select-none flex items-center space-x-4">
         <button
           onClick={() => setPage(<Todo />)}
-          className="p-2 text-white rounded-lg bg-indigo-700"
+          className="p-2 rounded-lg bg-white shadow-lg"
           on
         >
           To Do
         </button>
         <button
           onClick={() => setPage(<Uteis />)}
-          className="p-2 text-white rounded-lg bg-indigo-700"
+          className="p-2 shadow-xl rounded-lg bg-white"
         >
           Utilitários
         </button>
         <button
           onClick={() => setPage(<Sobre />)}
-          className="p-2 text-white rounded-lg bg-indigo-700"
+          className="p-2 shadow-xl rounded-lg bg-white"
         >
           Créditos
         </button>

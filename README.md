@@ -1,9 +1,10 @@
 # Todo PCAAS
 
-This is a simple todo list that i create to use while i'm working as
-a suport level 2, on [Stefanini](https://stefanini.com/en).
+This is a simple todo list that i create to use while i'm working on [Stefanini](https://stefanini.com/en).
 
-Part of my job is to delivery computers and/or to do rollout -change old machines for new ones. in this process, there's some process to follow and this project is a help to don't forgot any step
+Part of my job is to delivery computers and/or to do rollout -change old machines for a new ones. In this process, there's several steps to follow and this can be a little confuse, even to the oldests one.
+
+So, my goal is an increase to the accuracity to me and who wants to use it, during our job. Helping to don't forgot any step and providing a few more stuffs as a copy/paste funcionality in some softwares instalation process.
 
 ## Running this project
 
@@ -21,6 +22,9 @@ And open [http://localhost:3000](http://localhost:3000) on your browser
 </p>
 I decide to use Next.Js so I cam use vercel to store it without complications and use react wit and API server integrated. However, I don't know if i will really need it.
 
-## Deploy on Vercel
+## Deploy
 
-I'm working on this project yet, but i put it online so my partners cam follow it's growing up and give me opinions about.
+I'm working on this project yet, but i will put it online on Vercel, so my partners cam follow as it grows up and give me their opinions about that.
+
+To sse the last update:
+https://pcaas-app.vercel.app/

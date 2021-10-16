@@ -1,5 +1,5 @@
 import React from "react";
-import StepOne from "./components/steps/step_1";
+import StepOne from "./components/steps/stepOne";
 
 function Todo() {
   const [status, setStatus] = React.useState({
