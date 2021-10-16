@@ -1,5 +1,5 @@
 import React from "react";
-import { Items, ItemsContainer } from "./styles";
+import { Items, ItemsContainer } from "../../../styles/styles";
 
 export default function StepOne() {
   const [check, setCheck] = React.useState("checked");
