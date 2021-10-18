@@ -1,6 +1,6 @@
 import React from "react";
 import { Items, ItemsContainer } from "../../../styles/styles";
-import Modal from "../modal/modal";
+import Modal from "../modal/Modal";
 
 export default function StepOne() {
   const [check, setCheck] = React.useState("checked");
