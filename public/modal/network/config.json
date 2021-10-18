@@ -1,0 +1,26 @@
+{
+  "img1": {
+    "src": "/modal/network/img1.png",
+    "description": "clique com o botão direito sobre o ícone de internet.",
+    "width": "400",
+    "height": "200"
+  },
+  "img2": {
+    "src": "/modal/network/img2.png",
+    "description": "clique com o botão direito do mouse e selecione a opção propriedades.",
+    "width": "600",
+    "height": "250"
+  },
+  "img3": {
+    "src": "/modal/network/img3.png",
+    "description": "clique na opção 'change'.",
+    "width": "250",
+    "height": "300"
+  },
+  "img4": {
+    "src": "/modal/network/img4.png",
+    "description": "No campo 'computer name' insira NB+ativo, para notebook ou PC+ativo para desk. No campo 'domain' insira o domínio da unidade",
+    "width": "250",
+    "height": "300"
+  }
+}

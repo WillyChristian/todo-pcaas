@@ -8,5 +8,10 @@ export const Items = styled.section`
 `;
 
 export const ItemsContainer = styled.div`
-  width: 50%;
+  width: 80%;
+  height: 3rem;
+  padding: 0.95rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
