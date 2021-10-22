@@ -32,7 +32,7 @@ export default function Home() {
         <Navbar setpage={currentPage} />
         <section className="bg-gray-200 p-2 h-screen w-11/12">{page}</section>
       </main>
-      <footer class="text-gray-600 body-font bg-gray-700">
+      <footer className="text-gray-600 body-font bg-gray-700">
         <Footer />
       </footer>
     </>
