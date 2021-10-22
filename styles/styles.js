@@ -15,3 +15,10 @@ export const ItemsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const Menu = styled.aside`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+`;
