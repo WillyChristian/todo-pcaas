@@ -14,7 +14,10 @@ export default function Modal({ content, status, close }) {
           </spam>
         </div>
         <div className="text-center text-sm">
-          {content && content.map((data) => <Content data={data} />)}
+          {content &&
+            content.map((data, index) => (
+              <Content key={index * 2} data={data} />
+            ))}
         </div>
         <div className="flex justify-end p-2">
           <button onClick={close} className="p-2 rounded uppercase text-md">
