@@ -1,23 +1,23 @@
 import React from "react";
-import Carousel from "./carousel/Carousel";
+import Content from "./Content";
 
-export default function Modal({ display, openModal }) {
+export default function Modal({ content, status, close }) {
   return (
     <section
-      className={`${display} absolute justify-center items-center inset-0 bg-black bg-opacity-40`}
+      className={`${status} absolute justify-center items-center inset-0 bg-black bg-opacity-40`}
     >
       <div className="container overflow-scroll overscroll-contain bg-white w-2/3 h-5/6 p-3 rounded-md">
         <div className="flex justify-between items-cener">
           <p className="uppercase">titulo</p>
-          <spam className="cursor-pointer" onClick={openModal}>
+          <spam onClick={close} className="cursor-pointer">
             X
           </spam>
         </div>
         <div className="text-center text-sm">
-          <Carousel />
+          {content && content.map((data) => <Content data={data} />)}
         </div>
         <div className="flex justify-end p-2">
-          <button onClick={openModal} className="p-2 rounded uppercase text-md">
+          <button onClick={close} className="p-2 rounded uppercase text-md">
             Voltar
           </button>
         </div>
