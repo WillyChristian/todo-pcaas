@@ -1,5 +1,5 @@
 import React from "react";
-import config from "./components/steps/config";
+import { config } from "./components/steps/config";
 import Step from "./components/steps/Step";
 
 function Todo() {

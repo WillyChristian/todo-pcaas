@@ -1,4 +1,4 @@
-const config = {
+export const config = {
   0: [
     [
       [
@@ -56,7 +56,6 @@ const config = {
   ],
 };
 
-export default config;
 /*
 Como esta organizado os dados
 How data is distibuided
