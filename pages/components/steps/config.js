@@ -108,5 +108,3 @@ How data is distibuided
   ]
 
 */
-
-export default config
