@@ -1,4 +1,6 @@
-export const config = [
+import React from "react";
+
+const config = [
   // Passo
   [
     //Item
@@ -61,7 +63,7 @@ export const config = [
   [],
   [],
 ];
-
+export default config;
 /*
 Como esta organizado os dados
 How data is distibuided
