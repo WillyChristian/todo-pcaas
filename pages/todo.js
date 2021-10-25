@@ -1,5 +1,5 @@
 import React from "react";
-import { config } from "./components/steps/config";
+const config = require("../public/modal/config");
 import Step from "./components/steps/Step";
 
 function Todo() {
