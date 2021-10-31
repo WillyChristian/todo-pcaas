@@ -26,35 +26,36 @@ const StepOne = ({ data }) => {
 
   return (
     <Items>
-      {data.map((item, index) => {
-        return (
-          <ItemsContainer
-            key={index * 2 + 1}
-            className="bg-white rounded-md shadow-lg h-10 m-1"
-          >
-            <label className="inline-flex items-center">
-              <input
-                type="checkbox"
-                id="item"
-                className="form-checkbox h-5 w-5"
-              />
-              <span className="ml-2 text-gray-700">{checkStep(index)}</span>
-            </label>
-            <spam
-              id="network"
-              onClick={() => openModal(item)}
-              className="text-xs cursor-pointer uppercase p-1 border-4 border-double border-blue-200 rounded-md"
+      {data &&
+        data.map((item, index) => {
+          return (
+            <ItemsContainer
+              key={index * 2 + 1}
+              className="bg-white rounded-md shadow-lg h-10 m-1"
             >
-              Consultar
-            </spam>
-            <Modal
-              content={modal.content}
-              status={modal.status}
-              close={openModal}
-            />
-          </ItemsContainer>
-        );
-      })}
+              <label className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  id="item"
+                  className="form-checkbox h-5 w-5"
+                />
+                <span className="ml-2 text-gray-700">{checkStep(index)}</span>
+              </label>
+              <spam
+                id="network"
+                onClick={() => openModal(item)}
+                className="text-xs cursor-pointer uppercase p-1 border-4 border-double border-blue-200 rounded-md"
+              >
+                Consultar
+              </spam>
+              <Modal
+                content={modal.content}
+                status={modal.status}
+                close={openModal}
+              />
+            </ItemsContainer>
+          );
+        })}
     </Items>
   );
 };
