@@ -15,12 +15,15 @@ export default function Content({ data }) {
                 {data.description}
               </p>
             </div>
-            <Image
-              src={data.src}
-              alt="imagem"
-              width={data.width}
-              height={data.height}
-            />
+            {data.src && (
+              <Image
+                src={data.src}
+                alt="imagem"
+                width={data.width}
+                height={data.height}
+              />
+            )}
+            {!data.src && <div className="w-full h-full bg-gray-500"></div>}
           </div>
         </section>
       )}

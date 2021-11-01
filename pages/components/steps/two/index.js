@@ -1,40 +1,50 @@
 import React from "react";
-import { Items, ItemsContainer } from "../../../../styles/styles";
 import Modal from "../../modal/Modal";
 
-const StepOne = ({ data }) => {
+import { Items, ItemsContainer } from "../../../../styles/styles";
+
+export default function StepTwo({ data }) {
   const [modal, setModal] = React.useState({
     status: "hidden",
     content: "",
   });
-  const [localCheckOne, setLocalCheck] = React.useState({
-    0: ["Configuração de Rede", false],
-    1: ["Colocar no Domínio", false],
+
+  const [localCheckTwo, setLocalCheck] = React.useState({
+    0: ["Join Domain", false],
+    1: ["gpupdate /force", false],
+    2: ["Instalar Altiris", false],
+    3: ["Ativar o Windows (caso o gpudate falhe)", false],
   });
 
-  // Atualiza o estado da aplicação com base no local storage
+  //Inicializa a variável local caso haja dados no local storage
   React.useEffect(() => {
-    const local = JSON.parse(localStorage.getItem("pcaas_list_one"));
+    const local = JSON.parse(localStorage.getItem("pcaas_list_two"));
     if (local) {
       setLocalCheck(local);
     } else {
-      localStorage.setItem("pcaas_list_one", localCheckOne);
+      localStorage.setItem("pcaas_list_two", localCheckTwo);
     }
+  }, []);
+
+  // Atualiza o estado da aplicação com base no local storage
+  React.useEffect(() => {
+    const local = JSON.parse(localStorage.getItem("pcaas_list_two"));
+    setLocalCheck(local);
   }, []);
 
   //configura o local storage
   const updateCheckbox = (index, step, status) => {
     setLocalCheck({
-      ...localCheckOne,
+      ...localCheckTwo,
       [index]: [step, status],
     });
   };
   React.useEffect(() => {
-    localStorage.setItem("pcaas_list_one", JSON.stringify(localCheckOne));
-  }, [localCheckOne]);
+    localStorage.setItem("pcaas_list_two", JSON.stringify(localCheckTwo));
+  }, [localCheckTwo]);
 
   //configura os steps da página
-  const checkStep = (index) => localCheckOne[index];
+  const checkStep = (index) => localCheckTwo[index];
 
   //abre e fecha o modal
   const openModal = (content) => {
@@ -44,7 +54,7 @@ const StepOne = ({ data }) => {
   };
 
   return (
-    <Items>
+    <Items className="overflow-auto">
       {data &&
         data.map((item, index) => {
           return (
@@ -53,27 +63,33 @@ const StepOne = ({ data }) => {
               className="bg-white rounded-md shadow-lg h-10 m-1"
             >
               <label className="inline-flex items-center">
+                {/* coheckbox */}
                 <input
                   type="checkbox"
-                  id="item"
+                  id={`item-${index}`}
+                  checked={localCheckTwo[index][1]}
                   className="form-checkbox h-5 w-5"
                   onChange={(e) =>
                     updateCheckbox(
                       index,
-                      localCheckOne[index][0],
+                      localCheckTwo[index][0],
                       e.target.checked
                     )
                   }
                 />
+                {/* Nome do item */}
                 <span className="ml-2 text-gray-700">{checkStep(index)}</span>
               </label>
+
+              {/* Botão que abre o Modal */}
               <span
                 id="network"
                 onClick={() => openModal(item)}
-                className="text-xs cursor-pointer uppercase p-1 border-4 border-double border-blue-200 rounded-md"
+                className=" text-xs cursor-pointer uppercase p-1 border-4 border-double border-blue-200 rounded-md"
               >
                 Consultar
               </span>
+
               <Modal
                 content={modal.content}
                 status={modal.status}
@@ -84,5 +100,4 @@ const StepOne = ({ data }) => {
         })}
     </Items>
   );
-};
-export default StepOne;
+}

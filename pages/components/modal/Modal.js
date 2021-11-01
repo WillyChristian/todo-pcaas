@@ -9,9 +9,9 @@ export default function Modal({ content, status, close }) {
       <div className="container overflow-scroll overscroll-contain bg-white w-2/3 h-5/6 p-3 rounded-md">
         <div className="flex justify-between items-cener">
           <p className="uppercase">titulo</p>
-          <spam onClick={close} className="cursor-pointer">
+          <span onClick={close} className="cursor-pointer">
             X
-          </spam>
+          </span>
         </div>
         <div className="text-center text-sm">
           {content &&

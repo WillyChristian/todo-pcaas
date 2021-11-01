@@ -45,12 +45,73 @@
           "description": "Configure conforme a imagem abaixo. Atente-se para o passo 4 pois aqui será solicitado a credencial de administrador",
           "width": "600",
           "height": "250"
+        },
+        {
+          "etapa": 2,
+          "description": "Reinicie o computador",
+          "width": "600",
+          "height": "250"
         }
       ]
     ],
-    [],
-    [],
-    [],
+    [
+      [
+        {
+          "etapa": 1,
+          "description": "Primeiro item passo 2",
+          "width": "600",
+          "height": "250"
+        },
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        }
+      ],
+      [
+        {
+          "etapa": 2,
+          "description": "Primeiro item passo 2",
+          "width": "600",
+          "height": "250"
+        },
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        }
+      ],
+      [
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        },
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        }
+      ],
+      [
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        },
+        {
+          "etapa": 1,
+          "description": "Segundo item passo 2",
+          "width": "600",
+          "height": "250"
+        }
+      ]
+    ],
     []
   ]
 }
