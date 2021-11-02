@@ -56,7 +56,7 @@ const StepOne = ({ data }) => {
                 <input
                   type="checkbox"
                   id="item"
-                  className="form-checkbox h-5 w-5"
+                  className="form-checkbox h-5 w-10"
                   onChange={(e) =>
                     updateCheckbox(
                       index,

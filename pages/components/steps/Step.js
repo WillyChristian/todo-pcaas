@@ -22,14 +22,18 @@ function Step({ step, index }) {
   };
 
   return (
-    <>
-      <div className="bg-gray-300 text-center text-gray-800 rounded-lg shadow-md">
+    <div className="w-full p-2">
+      <div className=" bg-blue-400 text-center text-white rounded-lg shadow-md">
         <p onClick={() => openItem()} className="cursor-pointer p-2">
           Passo {index + 1}
         </p>
       </div>
-      <div className={`${open}`}>{stepPage[index]}</div>
-    </>
+      <div
+        className={`${open} bg-white my-2 py-2 overflow-auto rounded-lg shadow-lg`}
+      >
+        {stepPage[index]}
+      </div>
+    </div>
   );
 }
 

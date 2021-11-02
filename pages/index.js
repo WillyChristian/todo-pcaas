@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import Todo from "./todo";
 import Sobre from "./sobre";
@@ -24,17 +23,24 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div className="h-full w-full">
       <header className="bg-gray-100 w-full text-white flex items-center justify-center h-16">
         <Logo />
       </header>
-      <main className="flex">
+      <main className="sm:flex">
         <Navbar setpage={currentPage} />
-        <section className="bg-gray-200 p-2 h-screen w-11/12">{page}</section>
+        <section
+          className="
+          bg-gray-200 h-full
+          sm:w-full sm:h-screen 
+        "
+        >
+          {page}
+        </section>
       </main>
       <footer className="text-gray-600 body-font bg-gray-700">
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }

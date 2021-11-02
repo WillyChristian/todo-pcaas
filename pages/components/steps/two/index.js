@@ -13,7 +13,7 @@ export default function StepTwo({ data }) {
     0: ["Join Domain", false],
     1: ["gpupdate /force", false],
     2: ["Instalar Altiris", false],
-    3: ["Ativar o Windows (caso o gpudate falhe)", false],
+    3: ["Ativar o Windows", false],
   });
 
   //Inicializa a variável local caso haja dados no local storage

@@ -4,9 +4,9 @@ import Content from "./Content";
 export default function Modal({ content, status, close }) {
   return (
     <section
-      className={`${status} absolute justify-center items-center inset-0 bg-black bg-opacity-40`}
+      className={`${status} absolute justify-center items-center top-0 left-0 bottom-0 h-full w-full  bg-black bg-opacity-40`}
     >
-      <div className="container overflow-scroll overscroll-contain bg-white w-2/3 h-5/6 p-3 rounded-md">
+      <div className="container overflow-auto bg-white w-11/12 h-5/6 p-3 rounded-md">
         <div className="flex justify-between items-cener">
           <p className="uppercase">titulo</p>
           <span onClick={close} className="cursor-pointer">
