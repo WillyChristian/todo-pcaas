@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../card";
-const programs = require("./config.json");
+const programs = require("../../../config_shrortcuts.json");
 
 export default function Shortcut() {
   return (
