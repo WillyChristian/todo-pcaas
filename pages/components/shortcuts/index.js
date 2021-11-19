@@ -13,19 +13,6 @@ export default function Shortcut() {
           return <Card software={softwares} />;
         })}
       </div>
-      {/* <h1>Bancos de Dados</h1>
-      <div className="flex justify-center items-center w-full m-1">
-        {programs["programs"]["data-base"].map((softwares) => {
-          return <Card software={softwares} />;
-        })}
-      </div> */}
-
-      {/* <h1>Softwares mais comuns</h1>
-      <div className="flex justify-center items-center w-full m-1 overflow-x-scroll">
-        {programs["programs"]["common"].map((softwares) => {
-          return <Card software={softwares} />;
-        })}
-      </div> */}
     </div>
   );
 }
