@@ -1,11 +1,11 @@
 import React from "react";
 
 import Todo from "./todo";
-import Sobre from "./sobre";
 import Uteis from "./uteis";
 import Navbar from "./components/navbar/Nav";
 import Logo from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Shortcuts from "./shortcut";
 
 export default function Home() {
   const [page, setPage] = React.useState(<Todo />);
@@ -13,7 +13,7 @@ export default function Home() {
   const current = (page) =>
     ({
       page1: <Todo />,
-      page2: <Sobre />,
+      page2: <Shortcuts />,
       page3: <Uteis />,
     }[page]);
 

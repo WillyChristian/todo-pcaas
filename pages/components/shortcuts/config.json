@@ -1,0 +1,44 @@
+{
+  "programs": [
+    {
+      "name": "Catia",
+      "location": "\\\\meuServidor\\softwares\\Engeniers\\CATIA\\setup.exe",
+      "icon": "/icons/dassault.png"
+    },
+    {
+      "name": "Solid Works",
+      "location": "\\\\meuServidor\\softwares\\Engeniers\\Solidworks\\setup.exe",
+      "icon": "/icons/solidworks.png"
+    },
+    {
+      "name": "Matlab",
+      "location": "\\\\meuServidor\\softwares\\Engeniers\\Matlab\\setup.exe",
+      "icon": "/icons/matlab-r.png"
+    },
+    {
+      "name": "Oracle",
+      "location": "\\\\meuServidor\\softwares\\db\\oracle\\setup.exe",
+      "icon": "/icons/oracle.png"
+    },
+    {
+      "name": "MySQL",
+      "location": "\\\\meuServidor\\softwares\\db\\mysql\\setup.exe",
+      "icon": "/icons/mysql.png"
+    },
+    {
+      "name": "Firefox",
+      "location": "\\\\meuServidor\\softwares\\browsers\\firefox\\install.exe",
+      "icon": "/icons/firefox.png"
+    },
+    {
+      "name": "Chrome",
+      "location": "\\\\meuServidor\\softwares\\browsers\\chrome\\setup.exe",
+      "icon": "/icons/chrome-r.png"
+    },
+    {
+      "name": "GIMP",
+      "location": "\\\\meuServidor\\softwares\\image_editors\\GIMP\\setup.exe",
+      "icon": "/icons/gimp.jpg"
+    }
+  ]
+}
